@@ -1,0 +1,114 @@
+
+/* 1. Reset default browser spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. Style the whole header */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #ffffff;
+}
+
+/* 3. Arrange the logo and flag */
+.site-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.site-logo h1 {
+    font-size: 26px;
+    color: #183b2b;
+}
+
+.site-logo img {
+    width: 45px;
+    height: auto;
+}
+
+/* 4. Remove the navigation list bullets */
+.main-navigation ul {
+    display: flex;
+    list-style: none;
+    gap: 24px;
+}
+
+/* 5. Style the navigation links */
+.main-navigation a {
+    text-decoration: none;
+    color: #222222;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+/* 6. Add a hover effect */
+.main-navigation a:hover {
+    color: #c58b27;
+}
+
+/* Home / Hero Section */
+.hero {
+    min-height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 8%;
+
+    background-color: #183b2b;
+    color: white;
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.hero-content h2 {
+    font-size: 56px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.hero-button {
+    display: inline-block;
+    padding: 14px 28px;
+    background-color: #c58b27;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.hero-button:hover {
+    background-color: #a66f17;
+}
+
+.hero {
+    min-height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 8%;
+
+   background-image:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../Images/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: white;
+}
+
