@@ -166,7 +166,7 @@
 
 .adventure-content a {
     display: inline-block;
-    color: #b57b1d;
+    color: #1dadb5;
     text-decoration: none;
     font-weight: bold;
 }
@@ -393,6 +393,125 @@
     .main-navigation ul li a:hover {
         background-color: #252d32;
         color: #eeb64f;
+    }
+}
+
+
+/* ===== Website Footer ===== */
+
+.site-footer {
+    background-color: #151f24;
+    color: #d5dce3;
+    padding: 55px 6% 24px;
+}
+
+/* Footer Columns */
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 35px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Column Headings */
+.footer-column h3 {
+    display: inline-block;
+    font-size: 17px;
+    color: #4fe6ee;
+    margin-bottom: 22px;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+/* Footer Lists */
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column li {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.footer-column a {
+    color: #d5dce3;
+    font-size: 15px;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+    transition: color 0.3s ease;
+}
+
+.footer-column a:hover {
+    color: #eeb64f;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    margin: 40px auto 0;
+    padding-top: 25px;
+    border-top: 1px solid #30383d;
+    text-align: center;
+}
+
+.footer-address {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.footer-copyright {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.8;
+}
+
+.footer-separator {
+    margin: 0 8px;
+}
+
+/* ===== Tablet ===== */
+@media (max-width: 900px) {
+    .footer-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 35px 25px;
+    }
+}
+
+/* ===== Phone ===== */
+@media (max-width: 600px) {
+    .site-footer {
+        padding: 40px 7% 22px;
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        column-gap: 20px;
+        row-gap: 30px;
+    }
+
+    .footer-column h3 {
+        margin-bottom: 15px;
+    }
+
+    .footer-column li {
+        margin-bottom: 12px;
+    }
+
+    .footer-bottom {
+        margin-top: 30px;
+        padding-top: 22px;
+    }
+
+    .footer-address {
+        line-height: 1.7;
+        margin-bottom: 18px;
+    }
+
+    .footer-copyright {
+        font-size: 13px;
     }
 }
 
