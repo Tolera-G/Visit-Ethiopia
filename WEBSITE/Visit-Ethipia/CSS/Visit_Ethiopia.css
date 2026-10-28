@@ -271,3 +271,129 @@
     }
 }
 
+/* Menu button: hidden on desktop */
+.menu-toggle {
+    display: none;
+    border: none;
+    background: none;
+    font-size: 30px;
+    color: #183b2b;
+    cursor: pointer;
+}
+
+/* Phone navigation */
+@media (max-width: 600px) {
+
+    .main-navigation {
+        width: 100%;
+    }
+
+    .main-navigation .menu-toggle {
+        display: block;
+        margin-left: auto;
+    }
+
+    .main-navigation ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+        padding: 20px 0;
+    }
+
+    .main-navigation ul.menu-open {
+        display: flex;
+    }
+}
+
+/* Mobile Header Layout */
+@media (max-width: 600px) {
+
+    .site-header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 20px;
+        position: relative;
+        z-index: 100;
+    }
+
+    /* Title and flag stay together */
+    .site-logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .site-logo h1 {
+        font-size: 22px;
+    }
+
+    .site-logo img {
+        width: 45px;
+    }
+
+    /* Menu button stays on the right */
+    .main-navigation {
+        width: auto;
+        position: relative;
+    }
+
+    .main-navigation .menu-toggle {
+        display: block;
+        margin-left: 0;
+    }
+}
+
+/* Mobile Dropdown Menu */
+@media (max-width: 600px) {
+
+    .main-navigation ul {
+        display: none;
+
+        position: absolute;
+        top: calc(100% + 12px);
+        right: 0;
+
+        width: min(360px, calc(100vw - 30px));
+
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+
+        padding: 12px 0;
+        margin: 0;
+
+        background-color: #151a1d;
+        border: 1px solid #30373b;
+        border-radius: 18px;
+
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+
+        z-index: 200;
+    }
+
+    .main-navigation ul.menu-open {
+        display: flex;
+    }
+
+    .main-navigation ul li {
+        width: 100%;
+    }
+
+    .main-navigation ul li a {
+        display: block;
+        width: 100%;
+        padding: 14px 22px;
+        color: #ffffff;
+        font-size: 16px;
+        text-decoration: none;
+    }
+
+    .main-navigation ul li a:hover {
+        background-color: #252d32;
+        color: #eeb64f;
+    }
+}
+
+
