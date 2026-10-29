@@ -397,6 +397,113 @@
 }
 
 
+/* ===== Packages Section ===== */
+
+.packages {
+    padding: 60px 8%;
+    background-color: #f7f7f7;
+}
+
+/* Section Heading */
+.packages-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.packages-heading h2 {
+    font-size: 36px;
+    color: #183b2b;
+}
+
+/* Packages Grid */
+.packages-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+/* Package Card */
+.package-card {
+    min-width: 0;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Package Image */
+.package-card img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+/* Package Content */
+.package-content {
+    padding: 20px;
+}
+
+.package-content h3 {
+    font-size: 21px;
+    line-height: 1.4;
+    color: #183b2b;
+    margin-bottom: 12px;
+}
+
+.package-content p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #555555;
+    margin-bottom: 18px;
+}
+
+/* Read More Link */
+.package-link {
+    display: inline-block;
+    color: #b57b1d;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.package-link:hover {
+    text-decoration: underline;
+}
+
+/* Card Hover */
+.package-card:hover {
+    transform: translateY(-5px);
+}
+
+/* ===== Tablet ===== */
+@media (max-width: 900px) {
+    .packages-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* ===== Phone ===== */
+@media (max-width: 600px) {
+    .packages {
+        padding: 40px 5%;
+    }
+
+    .packages-heading h2 {
+        font-size: 28px;
+    }
+
+    .packages-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .package-card img {
+        height: 210px;
+    }
+}
+
+
 /* ===== Website Footer ===== */
 
 .site-footer {
